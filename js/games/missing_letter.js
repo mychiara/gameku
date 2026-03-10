@@ -8,7 +8,7 @@ function renderMissingLetterGame() {
   let emojiIcon = "❓";
   const searchWord = data.full.toLowerCase();
   for (const item of CONFIG.alphabet) {
-    if (item.name.toLowerCase() === searchWord) {
+    if (item.item && item.item.toLowerCase() === searchWord) {
       emojiIcon = item.emoji;
       break;
     }

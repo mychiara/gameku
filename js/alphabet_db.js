@@ -32,6 +32,7 @@ const ALPHABET_DATABASE = [
   { letter: "B", item: "Bubur", emoji: "🥣" },
   { letter: "B", item: "Botol", emoji: "🍼" },
   { letter: "B", item: "Burung", emoji: "🐦" },
+  { letter: "B", item: "Buaya", emoji: "🐊", img: "assets/buaya.png" },
 
   // C (15)
   { letter: "C", item: "Ceri", emoji: "🍒" },
@@ -102,7 +103,7 @@ const ALPHABET_DATABASE = [
   { letter: "F", item: "Fokus", emoji: "🔍" },
 
   // G (15)
-  { letter: "G", item: "Gajah", emoji: "🐘" },
+  { letter: "G", item: "Gajah", emoji: "🐘", img: "assets/gajah.png" },
   { letter: "G", item: "Gitar", emoji: "🎸" },
   { letter: "G", item: "Gelas", emoji: "🥛" },
   { letter: "G", item: "Gula", emoji: "🍭" },
@@ -154,7 +155,7 @@ const ALPHABET_DATABASE = [
 
   // J (15)
   { letter: "J", item: "Jagung", emoji: "🌽" },
-  { letter: "J", item: "Jerapah", emoji: "🦒" },
+  { letter: "J", item: "Jerapah", emoji: "🦒", img: "assets/jerapah.png" },
   { letter: "J", item: "Jambu", emoji: "🧧" },
   { letter: "J", item: "Jam", emoji: "⏰" },
   { letter: "J", item: "Jendela", emoji: "🪟" },
@@ -171,7 +172,7 @@ const ALPHABET_DATABASE = [
 
   // K (15)
   { letter: "K", item: "Kelinci", emoji: "🐰" },
-  { letter: "K", item: "Kucing", emoji: "🐱" },
+  { letter: "K", item: "Kucing", emoji: "🐱", img: "assets/cat.png" },
   { letter: "K", item: "Kuda", emoji: "🐴" },
   { letter: "K", item: "Kura-kura", emoji: "🐢" },
   { letter: "K", item: "Kelapa", emoji: "🥥" },
@@ -184,6 +185,7 @@ const ALPHABET_DATABASE = [
   { letter: "K", item: "Kupu-kupu", emoji: "🦋" },
   { letter: "K", item: "Kambing", emoji: "🐐" },
   { letter: "K", item: "Kaki", emoji: "🦶" },
+  { letter: "K", item: "Katak", emoji: "🐸", img: "assets/katak.png" },
   { letter: "K", item: "Kuning", emoji: "💛" },
 
   // L (15)
@@ -204,7 +206,7 @@ const ALPHABET_DATABASE = [
   { letter: "L", item: "Laba-laba", emoji: "🕷️" },
 
   // M (15)
-  { letter: "M", item: "Monyet", emoji: "🐒" },
+  { letter: "M", item: "Monyet", emoji: "🐒", img: "assets/monkey.png" },
   { letter: "M", item: "Mata", emoji: "👁️" },
   { letter: "M", item: "Matahari", emoji: "☀️" },
   { letter: "M", item: "Mobil", emoji: "🚗" },
@@ -255,7 +257,7 @@ const ALPHABET_DATABASE = [
   { letter: "O", item: "Ocehan", emoji: "🦜" },
 
   // P (15)
-  { letter: "P", item: "Panda", emoji: "🐼" },
+  { letter: "P", item: "Panda", emoji: "🐼", img: "assets/panda.png" },
   { letter: "P", item: "Pisang", emoji: "🍌" },
   { letter: "P", item: "Pesawat", emoji: "✈️" },
   { letter: "P", item: "Pintu", emoji: "🚪" },
@@ -307,7 +309,7 @@ const ALPHABET_DATABASE = [
 
   // S (15)
   { letter: "S", item: "Sapi", emoji: "🐮" },
-  { letter: "S", item: "Singa", emoji: "🦁" },
+  { letter: "S", item: "Singa", emoji: "🦁", img: "assets/lion.png" },
   { letter: "S", item: "Sepeda", emoji: "🚲" },
   { letter: "S", item: "Sepatu", emoji: "👟" },
   { letter: "S", item: "Sendok", emoji: "🥄" },
