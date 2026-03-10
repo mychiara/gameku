@@ -437,3 +437,23 @@ body {
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+
+/* Footer Style */
+.app-footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 2px dashed #eee;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.app-footer a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
