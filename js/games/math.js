@@ -44,5 +44,7 @@ function checkMath(selected, correct) {
   if (selected === correct) {
     currentState.score += 10;
     showSuccess(() => renderMathGame());
+  } else {
+    alert("Yah, kurang tepat. Coba hitung lagi ya! 🧮");
   }
 }

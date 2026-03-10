@@ -3,14 +3,18 @@ function renderOddGame() {
   const data =
     CONFIG.oddOneOut[Math.floor(Math.random() * CONFIG.oddOneOut.length)];
 
+  const correctItem = data.items[data.correct];
+  const options = [...data.items].sort(() => Math.random() - 0.5);
+  const correctIdx = options.indexOf(correctItem);
+
   const html = `
         <h3>Cari yang Berbeda!</h3>
         <p style="margin-bottom: 20px">Manakah yang <b>${data.name}</b>?</p>
         <div class="choices" style="grid-template-columns: repeat(2, 1fr); gap: 20px;">
-            ${data.items
+            ${options
               .map(
                 (item, idx) => `
-                <button class="btn-choice" style="font-size: 4rem; padding: 30px;" onclick="checkOdd(${idx}, ${data.correct})">
+                <button class="btn-choice" style="font-size: 4rem; padding: 30px;" onclick="checkOdd(${idx}, ${correctIdx})">
                     ${item}
                 </button>
             `,

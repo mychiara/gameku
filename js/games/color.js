@@ -23,5 +23,7 @@ function checkColor(selected, correct) {
   if (selected === correct) {
     currentState.score += 10;
     showSuccess(() => renderColorGame());
+  } else {
+    alert("Warnanya bukan itu sayang, coba lagi ya! 🎨");
   }
 }

@@ -3,8 +3,8 @@ function renderHabitGame() {
   const habit = CONFIG.habits[Math.floor(Math.random() * CONFIG.habits.length)];
 
   const html = `
-        <h3 style="color: ${habit.correct ? "var(--success)" : "var(--primary)"}">
-            ${habit.correct ? "Kebiasaan Baik" : "Kebiasaan Buruk"}
+        <h3 style="color: var(--primary)">
+            Kebiasaan Baik atau Buruk?
         </h3>
         <div style="font-size: 8rem; margin: 20px">${habit.emoji}</div>
         <p style="font-size: 1.5rem; margin-bottom: 20px">Apakah <b>${habit.task}</b> itu baik?</p>

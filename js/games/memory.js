@@ -55,6 +55,7 @@ function renderMemoryGame() {
 function flipCard(idx, emoji) {
   if (currentState.extra.flipped.length === 2) return;
   if (currentState.extra.matched.includes(idx)) return;
+  if (currentState.extra.flipped.some((c) => c.idx === idx)) return;
 
   const el = document.getElementById(`card-${idx}`);
   el.classList.add("flipped");

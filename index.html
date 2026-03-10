@@ -9,6 +9,9 @@
       content="Kumpulan game edukasi seru untuk anak-anak: Matematika, Puzzle, Tebak Hewan, dan lainnya!"
     />
     <link rel="stylesheet" href="index.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#ff6b81" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
   </head>
   <body>
     <div id="app">
@@ -18,13 +21,24 @@
           <div class="login-icon">🌈</div>
           <h1>Halo Sahabat Kecil!</h1>
           <p>Siapa namamu?</p>
-          <input type="text" id="user-name-input" placeholder="Ketik namamu di sini..." autocomplete="off">
-          <button class="btn-choice" style="background: var(--success); color: white; margin-top: 20px;" onclick="handleLogin()">Ayo Mulai! 🚀</button>
+          <input
+            type="text"
+            id="user-name-input"
+            placeholder="Ketik namamu di sini..."
+            autocomplete="off"
+          />
+          <button
+            class="btn-choice"
+            style="background: var(--success); color: white; margin-top: 20px"
+            onclick="handleLogin()"
+          >
+            Ayo Mulai! 🚀
+          </button>
         </div>
       </section>
 
       <!-- Home Screen -->
-      <section id="home" class="home-screen fade-in" style="display: none;">
+      <section id="home" class="home-screen fade-in" style="display: none">
         <header class="home-header">
           <h1 id="welcome-title">Dunia🌈Anak</h1>
           <p id="welcome-msg">Ayo bermain sambil belajar!</p>
@@ -147,7 +161,12 @@
       </section>
       <!-- Footer -->
       <footer class="app-footer">
-        <p>Developed by <b>Mas Andy</b> - <a href="https://masandigital.com" target="_blank">masandigital.com</a></p>
+        <p>
+          Developed by <b>Mas Andy</b> -
+          <a href="https://masandigital.com" target="_blank"
+            >masandigital.com</a
+          >
+        </p>
       </footer>
     </div>
 
@@ -180,5 +199,14 @@
     <script src="js/games/music.js"></script>
     <script src="js/games/flags.js"></script>
     <script src="js/games/weather.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('Service Worker registered', reg))
+            .catch(err => console.error('Service Worker not registered', err));
+        });
+      }
+    </script>
   </body>
 </html>

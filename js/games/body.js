@@ -3,6 +3,10 @@ function renderBodyGame() {
   const data =
     CONFIG.bodyParts[Math.floor(Math.random() * CONFIG.bodyParts.length)];
 
+  const correctItem = data.items[data.ans];
+  const options = [...data.items].sort(() => Math.random() - 0.5);
+  const correctIdx = options.indexOf(correctItem);
+
   const html = `
         <h3>Anggota Tubuh 👃</h3>
         ${addVoiceBtn(data.q)}
@@ -10,10 +14,10 @@ function renderBodyGame() {
             ${data.q}
         </p>
         <div class="choices">
-            ${data.items
+            ${options
               .map(
                 (item, idx) => `
-                <button class="btn-choice" style="font-size: 1.5rem; padding: 20px;" onclick="checkBody(${idx}, ${data.ans})">
+                <button class="btn-choice" style="font-size: 1.5rem; padding: 20px;" onclick="checkBody(${idx}, ${correctIdx})">
                     ${item}
                 </button>
             `,
