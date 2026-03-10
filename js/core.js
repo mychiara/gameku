@@ -3278,10 +3278,10 @@ function injectAd(slotId) {
     s1.type = "text/javascript";
     s1.text = `
         atOptions = {
-            'key' : '8389a7a5006a836aa5895355c11cfd02',
+            'key' : 'c001d2b3437b9785d71e78f32eed5421',
             'format' : 'iframe',
-            'height' : 250,
-            'width' : 300,
+            'height' : 50,
+            'width' : 320,
             'params' : {}
         };
     `;
@@ -3290,7 +3290,7 @@ function injectAd(slotId) {
     const s2 = document.createElement("script");
     s2.type = "text/javascript";
     s2.src =
-      "https://www.highperformanceformat.com/8389a7a5006a836aa5895355c11cfd02/invoke.js";
+      "https://www.highperformanceformat.com/c001d2b3437b9785d71e78f32eed5421/invoke.js";
     adSlot.appendChild(s2);
   }
 }
