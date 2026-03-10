@@ -3270,6 +3270,31 @@ function goHome() {
   }
 }
 
+// Ad Injection Helper
+function injectAd(slotId) {
+  const adSlot = document.getElementById(slotId);
+  if (adSlot) {
+    const s1 = document.createElement("script");
+    s1.type = "text/javascript";
+    s1.text = `
+        atOptions = {
+            'key' : '8389a7a5006a836aa5895355c11cfd02',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+        };
+    `;
+    adSlot.appendChild(s1);
+
+    const s2 = document.createElement("script");
+    s2.type = "text/javascript";
+    s2.src =
+      "https://www.highperformanceformat.com/8389a7a5006a836aa5895355c11cfd02/invoke.js";
+    adSlot.appendChild(s2);
+  }
+}
+
 function initGame() {
   const info = CONFIG.gameInfo[currentState.gameType];
   const container = document.getElementById("game-container");
@@ -3287,22 +3312,12 @@ function initGame() {
         <!-- Ad Slot in Intro -->
         <div class="ad-slot" style="margin-top: 30px;">
           <small>ADVERTISEMENT</small>
-          <div class="ad-placeholder" id="intro-ad-slot">
-            <!-- Space for Ad Code -->
-            <script>
-  atOptions = {
-    'key' : '8389a7a5006a836aa5895355c11cfd02',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/8389a7a5006a836aa5895355c11cfd02/invoke.js"></script>
-          </div>
+          <div class="ad-placeholder" id="intro-ad-slot"></div>
         </div>
     </div>
   `;
+
+  injectAd("intro-ad-slot");
 
   // Speak instructions
   speak(
@@ -3580,12 +3595,30 @@ function addVoiceBtn(text) {
 function updateContainer(html) {
   const container = document.getElementById("game-container");
   const scoreBadge = `<div class="score-badge">Skor: ${currentState.score}</div>`;
-  container.innerHTML = scoreBadge + html;
+  const adSlot = `
+    <div class="ad-slot" style="margin-top: 30px; border-top: 1px dashed #eee; padding-top: 20px;">
+      <small>ADVERTISEMENT</small>
+      <div id="game-ad-slot"></div>
+    </div>
+  `;
+  container.innerHTML = scoreBadge + html + adSlot;
+  injectAd("game-ad-slot");
 }
 
 function updateScore() {
   document.querySelector(".score-badge").innerText =
     `Skor: ${currentState.score}`;
+}
+
+function speakWithoutCancel(text) {
+  if ("speechSynthesis" in window) {
+    const msg = new SpeechSynthesisUtterance();
+    msg.text = text;
+    msg.lang = "id-ID";
+    msg.rate = 1.0;
+    msg.pitch = 1.2;
+    window.speechSynthesis.speak(msg);
+  }
 }
 
 function showSuccess(callback) {
@@ -3600,6 +3633,6 @@ function showSuccess(callback) {
         </div>
     `;
 
-  speak(successMsg);
-  setTimeout(callback, 2000);
+  speakWithoutCancel(successMsg);
+  setTimeout(callback, 6000);
 }
