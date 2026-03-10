@@ -3113,6 +3113,82 @@ const CONFIG = {
       rules: "Urutkan hewan berdasarkan jenis dan ciri-cirinya!",
       points: 35,
     },
+    symmetry_play: {
+      title: "Cermin Ajaib",
+      rules: "Lengkapi gambar di sisi kanan agar sama persis dengan sisi kiri!",
+      points: 40,
+    },
+    life_cycle: {
+      title: "Siklus Hidup",
+      rules: "Urutkan tahapan pertumbuhan makhluk hidup dari kecil ke besar!",
+      points: 40,
+    },
+    map_explorer: {
+      title: "Penjelajah Peta",
+      rules: "Ikuti petunjuk arah untuk sampai ke harta karun atau tujuan!",
+      points: 45,
+    },
+    fossil_match: {
+      title: "Museum Fosil",
+      rules: "Cocokkan tulang belulang hewan dengan gambar hewannya!",
+      points: 35,
+    },
+    recipe_steps: {
+      title: "Urutan Resep",
+      rules: "Bantu koki mengurutkan tahapan memasak camilan lezat ini!",
+      points: 40,
+    },
+    sempoa_cilik: {
+      title: "Sempoa Cilik",
+      rules: "Geser manik-manik sempoa untuk menghitung jumlah yang diminta!",
+      points: 35,
+    },
+    hidden_objects: {
+      title: "Cari Benda",
+      rules: "Temukan benda-benda yang tersembunyi di dalam ruangan!",
+      points: 40,
+    },
+    packing_master: {
+      title: "Packing Master",
+      rules: "Bantu masukkan semua mainan ke dalam koper dengan rapi!",
+      points: 45,
+    },
+    constellations: {
+      title: "Teropong Bintang",
+      rules:
+        "Hubungkan bintang-bintang di langit untuk membentuk rasi bintang!",
+      points: 50,
+    },
+    aim_practice: {
+      title: "Panah Target",
+      rules: "Ketuk pada target yang bergerak secepat mungkin!",
+      points: 30,
+    },
+    line_tracer: {
+      title: "Jejak Tali",
+      rules: "Tarik garis mengikuti jalur berliku tanpa keluar garis!",
+      points: 30,
+    },
+    laundry_sort: {
+      title: "Laundri Cilik",
+      rules: "Pisahkan baju putih dan baju berwarna agar tidak luntur!",
+      points: 35,
+    },
+    healthy_plate: {
+      title: "Bekal Sehat",
+      rules: "Pilih 4 jenis makanan berbeda untuk bekal gizi seimbang!",
+      points: 40,
+    },
+    home_safety: {
+      title: "Detektif Aman",
+      rules: "Cari benda-benda berbahaya di rumah yang harus dijauhkan!",
+      points: 40,
+    },
+    recycle_factory: {
+      title: "Daur Ulang",
+      rules: "Pilah sampah sesuai jenisnya agar bisa didaur ulang!",
+      points: 40,
+    },
   },
 };
 
@@ -3207,6 +3283,24 @@ function initGame() {
             <span style="font-weight: 800; color: var(--secondary);">Hadiah: +${info.points} Skor per level 🌟</span>
         </div>
         <button class="btn-choice" style="background: var(--success); color: white;" onclick="runGameLogic()">Mulai Main! 🚀</button>
+        
+        <!-- Ad Slot in Intro -->
+        <div class="ad-slot" style="margin-top: 30px;">
+          <small>ADVERTISEMENT</small>
+          <div class="ad-placeholder" id="intro-ad-slot">
+            <!-- Space for Ad Code -->
+            <script>
+  atOptions = {
+    'key' : '8389a7a5006a836aa5895355c11cfd02',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/8389a7a5006a836aa5895355c11cfd02/invoke.js"></script>
+          </div>
+        </div>
     </div>
   `;
 

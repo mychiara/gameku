@@ -495,3 +495,40 @@ body {
 .app-footer a:hover {
   text-decoration: underline;
 }
+
+/* Ad Slots */
+.ad-slot {
+  margin: 30px auto;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.ad-slot small {
+  display: block;
+  color: #b2bec3;
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.ad-placeholder {
+  background: rgba(255, 255, 255, 0.5);
+  border: 3px dashed #dfe6e9;
+  border-radius: 20px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b2bec3;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s;
+}
+
+.ad-placeholder:hover {
+  border-color: var(--secondary);
+  background: rgba(255, 255, 255, 0.8);
+}
+
