@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dunia Fantasi Anak - Belajar & Bermain</title>
+    <meta
+      name="description"
+      content="Kumpulan game edukasi seru untuk anak-anak: Matematika, Puzzle, Tebak Hewan, dan lainnya!"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Login Screen -->
+      <section id="login-screen" class="login-screen fade-in">
+        <div class="login-box">
+          <div class="login-icon">🌈</div>
+          <h1>Halo Sahabat Kecil!</h1>
+          <p>Siapa namamu?</p>
+          <input type="text" id="user-name-input" placeholder="Ketik namamu di sini..." autocomplete="off">
+          <button class="btn-choice" style="background: var(--success); color: white; margin-top: 20px;" onclick="handleLogin()">Ayo Mulai! 🚀</button>
+        </div>
+      </section>
+
+      <!-- Home Screen -->
+      <section id="home" class="home-screen fade-in" style="display: none;">
+        <header class="home-header">
+          <h1 id="welcome-title">Dunia🌈Anak</h1>
+          <p id="welcome-msg">Ayo bermain sambil belajar!</p>
+        </header>
+
+        <div class="game-grid">
+          <div class="game-card" onclick="startGame('animal')">
+            <span class="icon">🐶</span>
+            <h3>Tebak Hewan</h3>
+          </div>
+          <div class="game-card" onclick="startGame('alphabet')">
+            <span class="icon">🔤</span>
+            <h3>Belajar Huruf</h3>
+          </div>
+          <div class="game-card" onclick="startGame('math')">
+            <span class="icon">🧮</span>
+            <h3>Matematika</h3>
+          </div>
+          <div class="game-card" onclick="startGame('puzzle')">
+            <span class="icon">🧩</span>
+            <h3>Puzzle Seru</h3>
+          </div>
+          <div class="game-card" onclick="startGame('memory')">
+            <span class="icon">🃏</span>
+            <h3>Kartu Memori</h3>
+          </div>
+          <div class="game-card" onclick="startGame('color')">
+            <span class="icon">🎨</span>
+            <h3>Tebak Warna</h3>
+          </div>
+          <div class="game-card" onclick="startGame('habit')">
+            <span class="icon">⭐</span>
+            <h3>Kebiasaan Baik</h3>
+          </div>
+          <div class="game-card" onclick="startGame('odd')">
+            <span class="icon">🔍</span>
+            <h3>Cari yang Berbeda</h3>
+          </div>
+          <div class="game-card" onclick="startGame('counting')">
+            <span class="icon">🔢</span>
+            <h3>Menghitung Benda</h3>
+          </div>
+          <div class="game-card" onclick="startGame('pattern')">
+            <span class="icon">🧩</span>
+            <h3>Lengkapi Pola</h3>
+          </div>
+          <div class="game-card" onclick="startGame('shadow')">
+            <span class="icon">👤</span>
+            <h3>Teka-teki Bayangan</h3>
+          </div>
+          <div class="game-card" onclick="startGame('emotion')">
+            <span class="icon">🎭</span>
+            <h3>Mengenal Emosi</h3>
+          </div>
+          <div class="game-card" onclick="startGame('scale')">
+            <span class="icon">⚖️</span>
+            <h3>Besar & Kecil</h3>
+          </div>
+          <div class="game-card" onclick="startGame('opposite')">
+            <span class="icon">↔️</span>
+            <h3>Lawan Kata</h3>
+          </div>
+          <div class="game-card" onclick="startGame('job')">
+            <span class="icon">🚒</span>
+            <h3>Pekerjaan</h3>
+          </div>
+          <div class="game-card" onclick="startGame('habitat')">
+            <span class="icon">🏠</span>
+            <h3>Rumah Hewan</h3>
+          </div>
+          <div class="game-card" onclick="startGame('mixing')">
+            <span class="icon">🌈</span>
+            <h3>Campur Warna</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Game Views (Dynamic Content) -->
+      <section id="game-view" class="game-view">
+        <button class="btn-back" onclick="goHome()">← Kembali</button>
+        <div id="game-container" class="game-container fade-in">
+          <!-- Game logic will inject content here -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Game Logic Scripts -->
+    <script src="js/alphabet_db.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/games/animal.js"></script>
+    <script src="js/games/alphabet.js"></script>
+    <script src="js/games/math.js"></script>
+    <script src="js/games/memory.js"></script>
+    <script src="js/games/puzzle.js"></script>
+    <script src="js/games/color.js"></script>
+    <script src="js/games/habit.js"></script>
+    <script src="js/games/odd.js"></script>
+    <script src="js/games/counting.js"></script>
+    <script src="js/games/pattern.js"></script>
+    <script src="js/games/shadow.js"></script>
+    <script src="js/games/emotion.js"></script>
+    <script src="js/games/scale.js"></script>
+    <script src="js/games/opposite.js"></script>
+    <script src="js/games/job.js"></script>
+    <script src="js/games/habitat.js"></script>
+    <script src="js/games/mixing.js"></script>
+  </body>
+</html>
