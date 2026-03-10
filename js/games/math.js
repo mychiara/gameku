@@ -12,7 +12,8 @@ function renderMathGame() {
   // Generate dynamic choices centered around the correct answer
   let options = [correct];
   while (options.length < 6) {
-    let random = Math.max(1, correct + Math.floor(Math.random() * 5) - 2);
+    let random = correct + Math.floor(Math.random() * 10) - 4; // Wider range
+    if (random < 1) random = Math.floor(Math.random() * 15) + 1; // Fallback to avoid negatives/zeros
     if (!options.includes(random)) options.push(random);
   }
   options.sort((a, b) => a - b);
