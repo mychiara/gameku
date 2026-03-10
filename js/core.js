@@ -1838,6 +1838,951 @@ const CONFIG = {
     { condition: "Topan 🌀", action: "Angin berputar" },
     { condition: "Salju Meleleh 🫠", action: "Bermain air" },
   ],
+  time_sequence: [
+    {
+      seq: ["Senin", "Selasa", "Rabu", "?"],
+      correct: "Kamis",
+      options: ["Jumat", "Kamis", "Minggu"],
+    },
+    {
+      seq: ["Kamis", "Jumat", "Sabtu", "?"],
+      correct: "Minggu",
+      options: ["Senin", "Minggu", "Selasa"],
+    },
+    {
+      seq: ["Januari", "Februari", "Maret", "?"],
+      correct: "April",
+      options: ["April", "Agustus", "Mei"],
+    },
+    {
+      seq: ["Jumat", "Sabtu", "Minggu", "?"],
+      correct: "Senin",
+      options: ["Selasa", "Rabu", "Senin"],
+    },
+    {
+      seq: ["Maret", "April", "Mei", "?"],
+      correct: "Juni",
+      options: ["Juli", "Juni", "Agustus"],
+    },
+    {
+      seq: ["Agustus", "September", "Oktober", "?"],
+      correct: "November",
+      options: ["Desember", "Januari", "November"],
+    },
+    {
+      seq: ["Selasa", "Rabu", "Kamis", "?"],
+      correct: "Jumat",
+      options: ["Jumat", "Minggu", "Senin"],
+    },
+    {
+      seq: ["Mei", "Juni", "Juli", "?"],
+      correct: "Agustus",
+      options: ["Agustus", "September", "Desember"],
+    },
+    {
+      seq: ["September", "Oktober", "November", "?"],
+      correct: "Desember",
+      options: ["Januari", "Desember", "Maret"],
+    },
+    {
+      seq: ["Rabu", "Kamis", "Jumat", "?"],
+      correct: "Sabtu",
+      options: ["Minggu", "Sabtu", "Senin"],
+    },
+  ],
+  transport: [
+    { item: "Pesawat Terbang ✈️", answer: "Udara" },
+    { item: "Kereta Api 🚂", answer: "Darat" },
+    { item: "Kapal Laut 🛳️", answer: "Laut" },
+    { item: "Helikopter 🚁", answer: "Udara" },
+    { item: "Mobil 🚗", answer: "Darat" },
+    { item: "Perahu Karet 🚤", answer: "Laut" },
+    { item: "Sepeda Motor 🏍️", answer: "Darat" },
+    { item: "Balon Udara 🎈", answer: "Udara" },
+    { item: "Bus Umum 🚌", answer: "Darat" },
+    { item: "Kapal Selam ⛴️", answer: "Laut" },
+    { item: "Pesawat Jet 🚀", answer: "Udara" },
+    { item: "Truk 🚚", answer: "Darat" },
+    { item: "Rakit 🛶", answer: "Laut" },
+    { item: "Taksi 🚕", answer: "Darat" },
+    { item: "Skuter 🛴", answer: "Darat" },
+    { item: "Paralayang 🪂", answer: "Udara" },
+    { item: "Kapal Pesiar 🚢", answer: "Laut" },
+    { item: "Mobil Pemadam 🚒", answer: "Darat" },
+    { item: "Ambulans 🚑", answer: "Darat" },
+    { item: "Becak 🛺", answer: "Darat" },
+    { item: "Andong/Dokar 🐎", answer: "Darat" },
+    { item: "Bemo 🛺", answer: "Darat" },
+    { item: "Jet Ski 🚤", answer: "Laut" },
+    { item: "Kapal Feri ⛴️", answer: "Laut" },
+    { item: "Drone 🚁", answer: "Udara" },
+    { item: "Kano 🛶", answer: "Laut" },
+    { item: "Gokar 🏎️", answer: "Darat" },
+    { item: "Bajaj 🛺", answer: "Darat" },
+    { item: "Mobil Polisi 🚓", answer: "Darat" },
+    { item: "Sepeda 🚲", answer: "Darat" },
+    { item: "Kereta Cepat 🚄", answer: "Darat" },
+    { item: "Tank 🚜", answer: "Darat" },
+    { item: "Mocab 🚕", answer: "Darat" },
+    { item: "Roket 🚀", answer: "Udara" },
+    { item: "Beca Kayuh 🚲", answer: "Darat" },
+    { item: "Kapal Layar ⛵", answer: "Laut" },
+    { item: "Truk Sampah 🚛", answer: "Darat" },
+    { item: "Kendaraan Salju 🏎️", answer: "Darat" },
+    { item: "Kereta Gantung 🚠", answer: "Udara" },
+    { item: "Kapal Tunda 🛥️", answer: "Laut" },
+  ],
+  family: [
+    { q: "Ayah dari ayahmu disebut siapa?", ans: "Kakek 👴" },
+    { q: "Ibu dari ibumu disebut siapa?", ans: "Nenek 👵" },
+    { q: "Saudara laki-laki ibu atau ayahmu disebut siapa?", ans: "Paman 👨" },
+    { q: "Saudara perempuan ibu atau ayahmu disebut siapa?", ans: "Bibi 👩" },
+    { q: "Anak dari paman dan bibimu disebut siapa?", ans: "Sepupu 🧒" },
+    { q: "Orang yang melahirkan kamu disebut siapa?", ans: "Ibu 🤱" },
+    {
+      q: "Saudara laki-laki yang lahir lebih dulu darimu disebut siapa?",
+      ans: "Kakak Laki-laki 👦",
+    },
+    {
+      q: "Saudara perempuan yang lahir setelah kamu disebut siapa?",
+      ans: "Adik Perempuan 👧",
+    },
+    { q: "Kepala keluarga di rumah biasanya adalah siapa?", ans: "Ayah 👨‍💼" },
+    {
+      q: "Saudara perempuan yang lebih tua darimu disebut siapa?",
+      ans: "Kakak Perempuan 👩",
+    },
+    {
+      q: "Ayah dan Ibu kita panggil secara bersamaan dengan sebutan?",
+      ans: "Orang Tua 👫",
+    },
+    { q: "Orang tua dari ayah dan ibu kita panggil?", ans: "Kakek & Nenek 🧓" },
+    {
+      q: "Di rumah kamu anak terakhir yang paling kecil disebut?",
+      ans: "Adik Bungsu 👶",
+    },
+    {
+      q: "Saudara kandung laki-laki yang lahir setelah kamu disebut?",
+      ans: "Adik Laki-laki 👦",
+    },
+    {
+      q: "Anak kandung pertama di keluarga biasanya di panggil?",
+      ans: "Anak Sulung 👑",
+    },
+    {
+      q: "Saudara perempuan yang lahir di urutan paling terakhir disebut?",
+      ans: "Adik Bungsu 👧",
+    },
+    { q: "Siapa saudari kandung ayahmu?", ans: "Bibi (Tante) 👩" },
+    { q: "Apa sebutan untuk istri dari saudaramu?", ans: "Ipar 👩" },
+    { q: "Istri dari pamanmu disebut apa?", ans: "Bibi 👩" },
+    { q: "Suami dari bibimu disebut apa?", ans: "Paman 👨" },
+    {
+      q: "Apa sebutan untuk orang yang mengasuhmu di rumah?",
+      ans: "Pengasuh/Mbak 👩",
+    },
+    {
+      q: "Kalau ada dua orang laki-laki lahir bersamaan dari ibu yang sama disebut?",
+      ans: "Kembar 👦👦",
+    },
+    {
+      q: "Panggilan untuk Ibu bagi orang Jawa biasanya?",
+      ans: "Simbah/Ibu 👵",
+    },
+    { q: "Saudaramu yang paling tua disebut?", ans: "Kakak Tertua 🧒" },
+  ],
+  food_sort: [
+    { item: "Brokoli 🥦", type: "Sayur" },
+    { item: "Pisang 🍌", type: "Buah" },
+    { item: "Bayam 🥬", type: "Sayur" },
+    { item: "Semangka 🍉", type: "Buah" },
+    { item: "Wortel 🥕", type: "Sayur" },
+    { item: "Anggur 🍇", type: "Buah" },
+    { item: "Terong 🍆", type: "Sayur" },
+    { item: "Jeruk 🍊", type: "Buah" },
+    { item: "Tomat 🍅", type: "Sayur" },
+    { item: "Stroberi 🍓", type: "Buah" },
+    { item: "Kangkung 🌿", type: "Sayur" },
+    { item: "Apel 🍎", type: "Buah" },
+    { item: "Jagung 🌽", type: "Sayur" },
+    { item: "Mangga 🥭", type: "Buah" },
+    { item: "Kubis 🥗", type: "Sayur" },
+    { item: "Nanas 🍍", type: "Buah" },
+    { item: "Kacang Panjang 🫘", type: "Sayur" },
+    { item: "Alpukat 🥑", type: "Buah" },
+    { item: "Kentang 🥔", type: "Sayur" },
+    { item: "Sawi Hijau 🌿", type: "Sayur" },
+    { item: "Melon 🍈", type: "Buah" },
+    { item: "Kiwi 🥝", type: "Buah" },
+    { item: "Bawang Merah 🧅", type: "Sayur" },
+    { item: "Sawi Putih 🥬", type: "Sayur" },
+    { item: "Pepaya 🎃", type: "Buah" },
+    { item: "Timun 🥒", type: "Sayur" },
+    { item: "Pare 🍈", type: "Sayur" },
+    { item: "Paprika 🫑", type: "Sayur" },
+    { item: "Jamur 🍄", type: "Sayur" },
+    { item: "Durian 🍈", type: "Buah" },
+    { item: "Rambutan 🧶", type: "Buah" },
+    { item: "Manggis 🟣", type: "Buah" },
+    { item: "Salak 🤎", type: "Buah" },
+    { item: "Sawo 🥔", type: "Buah" },
+    { item: "Sukun 🍈", type: "Buah" },
+    { item: "Kelapa 🥥", type: "Buah" },
+    { item: "Lengkeng 🥔", type: "Buah" },
+    { item: "Duku 🥔", type: "Buah" },
+    { item: "Sirsak 🍐", type: "Buah" },
+    { item: "Sawi 🥬", type: "Sayur" },
+    { item: "Buncis 🫛", type: "Sayur" },
+    { item: "Labu 🎃", type: "Sayur" },
+    { item: "Lobak 🥕", type: "Sayur" },
+    { item: "Rebung 🎋", type: "Sayur" },
+    { item: "Genjer 🌿", type: "Sayur" },
+    { item: "Pepaya Muda 🥥", type: "Sayur" },
+    { item: "Nangka Muda 🍈", type: "Sayur" },
+    { item: "Kacang Polong 🫛", type: "Sayur" },
+    { item: "Kentang Manis 🍠", type: "Buah" },
+  ],
+  hygiene: [
+    {
+      case: "Rambut adik kotor dan gatal, benda apa yang bisa dipakai untuk keramas?",
+      ans: "Sampo 🧴",
+    },
+    {
+      case: "Rahang dan mulut terasa sisa makanan, kita harus membersihkannya pakai apa?",
+      ans: "Sikat Gigi 🪥",
+    },
+    {
+      case: "Badan kita berkeringat setelah bermain, apa yang dipakai saat mandi?",
+      ans: "Sabun 🧼",
+    },
+    {
+      case: "Kuku adik panjang dan hitam, alat apa yang digunakan untuk merapikannya?",
+      ans: "Pemotong Kuku ✂️",
+    },
+    {
+      case: "Telinga terasa kotor dan berair, alat apa yang dipakai untuk mengeringkannya?",
+      ans: "Cotton Bud 🥢",
+    },
+    {
+      case: "Habis cuci tangan, alat apa yang keringkan tangan kita?",
+      ans: "Handuk 🧖",
+    },
+    {
+      case: "Rambut kusut berantakan setelah tidur, kita rapikan pakai apa?",
+      ans: "Sisir 🪮",
+    },
+    {
+      case: "Ingin wangi setelah mandi, kita semprotkan apa?",
+      ans: "Parfum 🌬️",
+    },
+    {
+      case: "Selesai menyikat gigi, mulut butuh dibilas dengan apa?",
+      ans: "Air Bersih 🚰",
+    },
+    {
+      case: "Hidung bersin dan ada ingus, kita lap pakai benda apa?",
+      ans: "Tisu 🤧",
+    },
+    {
+      case: "Setelah makan ada sisa lauk menempel di celah gigi. Kita butuh benda apa untuk membersihkannya?",
+      ans: "Benang Gigi 🧵",
+    },
+    {
+      case: "Sesudah bermain di tanah lapang, sebelum memegang makanan tangan wajib dicuci pakai?",
+      ans: "Sabun Cuci Tangan 🧼",
+    },
+    {
+      case: "Supaya wajah lebih jernih dan tak berminyak waktu bangun, kita membasuhnya pakai apa?",
+      ans: "Sabun Cuci Muka 🧴",
+    },
+    {
+      case: "Badan kurang segar setelah kegiatan di sekolah? Apa obat terindah menyegarkannya?",
+      ans: "Mandi Air Bersih 🚿",
+    },
+    {
+      case: "Tangan penuh darah karena terjatuh atau gatal, kita olesi luka pakai apa agar higienis?",
+      ans: "Antiseptik 🩹",
+    },
+    {
+      case: "Habis makan tangan lengket, cuci pakai apa?",
+      ans: "Sabun Cuci Tangan 🧼",
+    },
+    {
+      case: "Mata merah terkena debu, kita tetesi pakai?",
+      ans: "Obat Mata 👁️",
+    },
+    {
+      case: "Kaki kotor setelah main bola, harus apa sebelum masuk rumah?",
+      ans: "Cuci Kaki 🦶",
+    },
+    { case: "Baju bau keringat, harus segera di?", ans: "Ganti/Cuci 👕" },
+    { case: "Selesai BAK kita harus?", ans: "Siram/Cebok 🚽" },
+    {
+      case: "Telinga tersumbat air, keringkan dengan hati-hati pakai?",
+      ans: "Handuk Kecil 🧖",
+    },
+    { case: "Lantai kamar kotor, kita harus?", ans: "Sapu & Pel 🧹" },
+    { case: "Jendela berdebu, bersihkan dengan?", ans: "Kemoceng 🧹" },
+    {
+      case: "Ada sampah di meja, kita harus?",
+      ans: "Buang ke Tempat Sampah 🗑️",
+    },
+    { case: "Meja makan kotor setelah makan, kita?", ans: "Lap 🧼" },
+  ],
+  school: [
+    {
+      case: "Aku dipakai untuk menghapus tulisan pensil yang salah, siapakah aku?",
+      ans: "Penghapus 🧼",
+      fallback: "🧽",
+    },
+    {
+      case: "Aku berisi lembaran kertas tempat kamu bisa menulis atau menggambar, siapakah aku?",
+      ans: "Buku Tulis 📓",
+      fallback: "📓",
+    },
+    {
+      case: "Aku punya banyak warna cerah dan bisa dipakai untuk mewarnai tugasmu, siapakah aku?",
+      ans: "Pensil Warna 🖍️",
+      fallback: "🖍️",
+    },
+    {
+      case: "Aku tempat yang luas di depan kelas, tempat ibu guru menulis angka dan huruf, siapakah aku?",
+      ans: "Papan Tulis 🪧",
+      fallback: "🪧",
+    },
+    {
+      case: "Semua buku dan tempat pensil di dalam aku tutup sleting dan kamu gendong di punggung, siapakah aku?",
+      ans: "Tas Ransel 🎒",
+      fallback: "🎒",
+    },
+    {
+      case: "Aku dipakai untuk mengukur dan membuat garis lurus, siapakah aku?",
+      ans: "Penggaris 📏",
+      fallback: "📏",
+    },
+    {
+      case: "Bentukku tajam untuk memotong kertas kerajinanmu, siapakah aku?",
+      ans: "Gunting ✂️",
+      fallback: "✂️",
+    },
+    {
+      case: "Tinta ku berwarna-warni biasa digunakan pak guru tanda tangan, siapakah aku?",
+      ans: "Pulpen 🖊️",
+      fallback: "🖊️",
+    },
+    {
+      case: "Pensil kamu tumpul? Masukkan ke dalam kepalaku lalu putar, siapakah aku?",
+      ans: "Peraut Pensil ⚙️",
+      fallback: "⚙️",
+    },
+    {
+      case: "Baju ini warnanya sama semua dengan teman sekelas dipakai setiap pagi, siapakah aku?",
+      ans: "Seragam 👕",
+      fallback: "👕",
+    },
+    {
+      case: "Semua spidol dan penghapusku tersimpan rapi selagi aku resleting. Aku adalah?",
+      ans: "Tempat Pensil 👝",
+      fallback: "👝",
+    },
+    {
+      case: "Saat menggambar dengan krayon yang dipegang erat butuh kertas besar berbuku yang disebut?",
+      ans: "Buku Gambar 🖌️",
+      fallback: "🖌️",
+    },
+    {
+      case: "Kadang warnanya putih dan sangat mudah hancur, dipakai pak guru zaman dulu di papan hitam.",
+      ans: "Kapur Tulis 🧱",
+      fallback: "🧱",
+    },
+    {
+      case: "Wujudnya meja datar dan bangku kayu agar kalian nyaman menulis, aku adalah?",
+      ans: "Meja Belajar 🪑",
+      fallback: "🪑",
+    },
+    {
+      case: "Bunyiku sangat nyaring! Kalau aku ditekan berarti waktunya pulang sudah tiba.",
+      ans: "Bel Sekolah 🔔",
+      fallback: "🔔",
+    },
+    {
+      case: "Aku tempat guru berdiri untuk mengajar di depan kelas, aku adalah?",
+      ans: "Podium 🎙️",
+      fallback: "🎙️",
+    },
+    {
+      case: "Aku berisi air untuk kamu minum saat haus di sekolah, aku adalah?",
+      ans: "Botol Minum 🍼",
+      fallback: "🍼",
+    },
+    {
+      case: "Aku berisi nasi dan lauk untuk makan siangmu, aku adalah?",
+      ans: "Kotak Bekal 🍱",
+      fallback: "🍱",
+    },
+    {
+      case: "Aku menempel di dinding dan menunjukkan waktu istirahat, aku adalah?",
+      ans: "Jam Dinding ⏰",
+      fallback: "⏰",
+    },
+    {
+      case: "Aku tempat membuang rautan pensil dan kertas bekas, aku adalah?",
+      ans: "Tempat Sampah 🗑️",
+      fallback: "🗑️",
+    },
+    {
+      case: "Aku lemari kecil tempat menyimpan buku-bukumu, aku adalah?",
+      ans: "Loker 📦",
+      fallback: "📦",
+    },
+    {
+      case: "Aku dipakai untuk mengelap papan tulis, aku adalah?",
+      ans: "Penghapus Papan 🧽",
+      fallback: "🧽",
+    },
+    {
+      case: "Aku dipasang di saku seragammu untuk identitas, aku adalah?",
+      ans: "Badge/Bet 🏷️",
+      fallback: "🏷️",
+    },
+    {
+      case: "Aku ikat pinggang untuk merapikan celanamu, aku adalah?",
+      ans: "Sabuk ベルト",
+      fallback: "ベルト",
+    },
+    {
+      case: "Aku alas kaki yang harus dilepas sebelum masuk kelas, aku adalah?",
+      ans: "Sepatu 👟",
+      fallback: "👟",
+    },
+  ],
+  shopping: [
+    {
+      order_text: "Beli 2 Susu dan 1 Roti",
+      items: [
+        { emoji: "🥛", count: 2 },
+        { emoji: "🍞", count: 1 },
+      ],
+    },
+    {
+      order_text: "Tolong belikan 3 Apel dan 2 Permen",
+      items: [
+        { emoji: "🍎", count: 3 },
+        { emoji: "🍬", count: 2 },
+      ],
+    },
+    {
+      order_text: "Ibu butuh 1 Telur, 1 Kue, dan 2 Es Krim",
+      items: [
+        { emoji: "🥚", count: 1 },
+        { emoji: "🍰", count: 1 },
+        { emoji: "🍦", count: 2 },
+      ],
+    },
+    {
+      order_text: "Beli 4 Pisang dan 1 Cokelat ya",
+      items: [
+        { emoji: "🍌", count: 4 },
+        { emoji: "🍫", count: 1 },
+      ],
+    },
+    {
+      order_text: "Adik pesan 2 Bola dan 1 Balon",
+      items: [
+        { emoji: "⚽", count: 2 },
+        { emoji: "🎈", count: 1 },
+      ],
+    },
+    {
+      order_text: "Ayah mau 1 Kopi dan 2 Burger",
+      items: [
+        { emoji: "☕", count: 1 },
+        { emoji: "🍔", count: 2 },
+      ],
+    },
+    {
+      order_text: "Beli 3 Donat dan 3 Biskuit buat bekal",
+      items: [
+        { emoji: "🍩", count: 3 },
+        { emoji: "🍪", count: 3 },
+      ],
+    },
+    {
+      order_text: "Tolong 2 Jus dan 1 Pizza",
+      items: [
+        { emoji: "🧃", count: 2 },
+        { emoji: "🍕", count: 1 },
+      ],
+    },
+    {
+      order_text: "Beli 5 Wortel dan 1 Jagung",
+      items: [
+        { emoji: "🥕", count: 5 },
+        { emoji: "🌽", count: 1 },
+      ],
+    },
+    {
+      order_text: "Cari 2 Sabun dan 1 Sampo",
+      items: [
+        { emoji: "🧼", count: 2 },
+        { emoji: "🧴", count: 1 },
+      ],
+    },
+    {
+      order_text: "Ambil 4 Jeruk manis dan 2 Botol Air",
+      items: [
+        { emoji: "🍊", count: 4 },
+        { emoji: "🍼", count: 2 },
+      ],
+    },
+    {
+      order_text: "Beli 1 Payung dan 2 Jas Hujan Kuning",
+      items: [
+        { emoji: "☂️", count: 1 },
+        { emoji: "🧥", count: 2 },
+      ],
+    },
+    {
+      order_text: "Beli 3 Sikat Gigi dan 1 Pasta Gigi dewasa",
+      items: [
+        { emoji: "🪥", count: 3 },
+        { emoji: "🧴", count: 1 },
+      ],
+    },
+    {
+      order_text: "Beli 2 Sepatu boot dan 2 Kaus Kaki baru",
+      items: [
+        { emoji: "👞", count: 2 },
+        { emoji: "🧦", count: 2 },
+      ],
+    },
+    {
+      order_text: "Ambil 1 Tas Sekolah dan 2 Sepatu",
+      items: [
+        { emoji: "🎒", count: 1 },
+        { emoji: "👟", count: 2 },
+      ],
+    },
+    {
+      order_text: "Ayah butuh 1 Martil dan 3 Paku",
+      items: [
+        { emoji: "🔨", count: 1 },
+        { emoji: "📌", count: 3 },
+      ],
+    },
+    {
+      order_text: "Beri 2 Wortel dan 1 Bayam",
+      items: [
+        { emoji: "🥕", count: 2 },
+        { emoji: "🥬", count: 1 },
+      ],
+    },
+    {
+      order_text: "Tolong 1 Penggaris dan 4 Pensil",
+      items: [
+        { emoji: "📏", count: 1 },
+        { emoji: "✏️", count: 4 },
+      ],
+    },
+    {
+      order_text: "Minta 1 Topi dan 1 Kacamata",
+      items: [
+        { emoji: "🧢", count: 1 },
+        { emoji: "🕶️", count: 1 },
+      ],
+    },
+    {
+      order_text: "Ibu mau 3 Telur dan 2 Sosis",
+      items: [
+        { emoji: "🥚", count: 3 },
+        { emoji: "🌭", count: 2 },
+      ],
+    },
+    {
+      order_text: "Beli 2 Semangka dan 3 Jeruk",
+      items: [
+        { emoji: "🍉", count: 2 },
+        { emoji: "🍊", count: 3 },
+      ],
+    },
+    {
+      order_text: "Beli 1 Panci dan 1 Sodet",
+      items: [
+        { emoji: "🍲", count: 1 },
+        { emoji: "🍳", count: 1 },
+      ],
+    },
+    {
+      order_text: "Cari 2 Baterai dan 1 Senter",
+      items: [
+        { emoji: "🔋", count: 2 },
+        { emoji: "🔦", count: 1 },
+      ],
+    },
+  ],
+  word_scramble: [
+    { word: "BUKU", emj: "📖" },
+    { word: "MEJA", emj: "🪑" },
+    { word: "BOLA", emj: "⚽" },
+    { word: "APEL", emj: "🍎" },
+    { word: "SAPI", emj: "🐮" },
+    { word: "SUSU", emj: "🥛" },
+    { word: "GIGI", emj: "🦷" },
+    { word: "TOPI", emj: "🧢" },
+    { word: "MATA", emj: "👁️" },
+    { word: "KAKI", emj: "🦶" },
+    { word: "ROTI", emj: "🍞" },
+    { word: "BAJU", emj: "👕" },
+    { word: "DASI", emj: "👔" },
+    { word: "TAHU", emj: "🟨" },
+    { word: "KUE", emj: "🍰" },
+    { word: "MADU", emj: "🍯" },
+    { word: "JAM", emj: "⌚" },
+    { word: "TAS", emj: "🎒" },
+    { word: "PENA", emj: "🖊️" },
+    { word: "ALAM", emj: "🏞️" },
+    { word: "AYAM", emj: "🐔" },
+    { word: "IKAN", emj: "🐟" },
+    { word: "ULAR", emj: "🐍" },
+    { word: "KERA", emj: "🐒" },
+    { word: "KUDA", emj: "🐎" },
+    { word: "RODA", emj: "🎡" },
+    { word: "PULU", emj: "🏝️" },
+    { word: "NAGA", emj: "🐉" },
+    { word: "KACA", emj: "🪟" },
+    { word: "PINT", emj: "🚪" },
+    { word: "ATAP", emj: "🏠" },
+    { word: "PADI", emj: "🌾" },
+    { word: "GULA", emj: "🍬" },
+    { word: "KOPI", emj: "☕" },
+    { word: "JAHE", emj: "🫚" },
+    { word: "MADU", emj: "🍯" },
+    { word: "PAKU", emj: "🔨" },
+    { word: "SAYU", emj: "🥦" },
+    { word: "BUAH", emj: "🍎" },
+    { word: "DAUN", emj: "🍃" },
+    { word: "AKAR", emj: "🪵" },
+    { word: "BUMI", emj: "🌍" },
+    { word: "BULA", emj: "🌙" },
+    { word: "AWAN", emj: "☁️" },
+    { word: "API", emj: "🔥" },
+    { word: "AIR", emj: "💧" },
+    { word: "GUA", emj: "⛰️" },
+    { word: "SATE", emj: "🍢" },
+    { word: "SUP", emj: "🥣" },
+  ],
+  maze: [
+    {
+      q: "Monyet kelaparan, kemana ia harus pergi?",
+      icon: "🐒",
+      ans: "Pisang 🍌",
+      paths: ["Pisang 🍌", "Tulang 🦴", "Bunga 🌺"],
+    },
+    {
+      q: "Kelinci dikejar serigala, kemana jalan paling aman?",
+      icon: "🐰",
+      ans: "Lubang 🕳️",
+      paths: ["Lubang 🕳️", "Air Laut 🌊", "Gua Serigala 🐺"],
+    },
+    {
+      q: "Kucing merasa kedinginan, jalan mana yang hangat?",
+      icon: "🐱",
+      ans: "Rumah 🏠",
+      paths: ["Salju ❄️", "Rumah 🏠", "Kulkas 🧊"],
+    },
+    {
+      q: "Lebah ingin membuat madu, manakah tujuannya?",
+      icon: "🐝",
+      ans: "Bunga 🌻",
+      paths: ["Bunga 🌻", "Bawang 🧅", "Daging 🥩"],
+    },
+    {
+      q: "Mobil kehabisan bensi, arahkan ke mana?",
+      icon: "🚗",
+      ans: "SPBU ⛽",
+      paths: ["Bandara ✈️", "Taman 🏞️", "SPBU ⛽"],
+    },
+    {
+      q: "Pemadam Kebakaran dapat telepon darurat, ke mana tujuannya?",
+      icon: "🚒",
+      ans: "Api 🔥",
+      paths: ["Supermarket 🛒", "Api 🔥", "Kolam Renang 🏊"],
+    },
+    {
+      q: "Ikan melompat keluar, bantu ia pulang",
+      icon: "🐟",
+      ans: "Akuarium 🐠",
+      paths: ["Pasir 🏜️", "Panci 🍲", "Akuarium 🐠"],
+    },
+    {
+      q: "Katak sedang mencari makan, mana yang enak?",
+      icon: "🐸",
+      ans: "Lalat 🪰",
+      paths: ["Tulang 🦴", "Lalat 🪰", "Rumput 🌱"],
+    },
+    {
+      q: "Tikus takut pada kucing, mana jebakannya?",
+      icon: "🐭",
+      ans: "Kucing 🐈 (Awas!)",
+      paths: ["Keju 🧀", "Kucing 🐈 (Awas!)", "Biskuit 🍪"],
+      isTrap: true,
+    },
+    {
+      q: "Astronot kembali ke bumi, arahkan pesawatnya",
+      icon: "🚀",
+      ans: "Bumi 🌍",
+      paths: ["Matahari ☀️", "Bumi 🌍", "Komet ☄️"],
+    },
+    {
+      q: "Beruang ingin hibernasi musim dingin, ke mana dia pergi?",
+      icon: "🐻",
+      ans: "Gua ⛰️",
+      paths: ["Gua ⛰️", "Tenda ⛺", "Pasar 🎪"],
+    },
+    {
+      q: "Kereta api kehilangan jalurnya, manakah jalannya?",
+      icon: "🚂",
+      ans: "Rel 🛤️",
+      paths: ["Jalan Raya 🛣️", "Rel 🛤️", "Sungai 🏞️"],
+    },
+    {
+      q: "Laba-laba ingin menangkap nyamuk, dimana sarangnya?",
+      icon: "🕷️",
+      ans: "Jaring 🕸️",
+      paths: ["Gelas 🥤", "Jaring 🕸️", "Sepatu 👟"],
+    },
+    {
+      q: "Kelelawar takut cahaya, di mana tempat persembunyiannya?",
+      icon: "🦇",
+      ans: "Gua Gelap 🌌",
+      paths: ["Gua Gelap 🌌", "Lampu Jalan 💡", "Matahari ☀️"],
+    },
+    {
+      q: "Kuda nil kepanasan, kemana ia harus berendam?",
+      icon: "🦛",
+      ans: "Lumpur / Sungai 🏞️",
+      paths: ["Lumpur / Sungai 🏞️", "Api Unggun 🏕️", "Gurun Pasir 🏜️"],
+    },
+    {
+      q: "Anjing ingin mengubur makanannya, apa yang dia cari?",
+      icon: "🐶",
+      ans: "Tulang 🦴",
+      paths: ["Tulang 🦴", "Ikan 🐟", "Wortel 🥕"],
+    },
+    {
+      q: "Penguin ingin bermain meluncur, kemana ia pergi?",
+      icon: "🐧",
+      ans: "Es 🧊",
+      paths: ["Lumpur 💩", "Es 🧊", "Pasir Pantai 🏖️"],
+    },
+    {
+      q: "Pesawat kehabisan avtur, di mana ia harus mendarat?",
+      icon: "✈️",
+      ans: "Bandara 🛬",
+      paths: ["Bandara 🛬", "Rel Kereta 🛤️", "Terminal Bus 🚌"],
+    },
+    {
+      q: "Sapi ingin makan rumput segar, di mana tempatnya?",
+      icon: "🐮",
+      ans: "Padang Rumput 🏞️",
+      paths: ["Lautan 🌊", "Padang Rumput 🏞️", "Jalan Tol 🛣️"],
+    },
+    {
+      q: "Kapal akan tenggelam, butuh pelampung!",
+      icon: "🚢",
+      ans: "Sekoci 🚤",
+      paths: ["Sekoci 🚤", "Jangkar ⚓", "Batu Karang 🪨"],
+    },
+    {
+      q: "Ulat lapar ingin jadi kupu-kupu, ke mana ia makan?",
+      icon: "🐛",
+      ans: "Daun 🍃",
+      paths: ["Daun 🍃", "Tulang 🦴", "Air 🌊"],
+    },
+    {
+      q: "Pencuri lari, ke mana polisi mengejarnya?",
+      icon: "👮",
+      ans: "Penjara 👮‍♂️",
+      paths: ["Taman 🎡", "Toko 🛒", "Penjara 👮‍♂️"],
+    },
+    {
+      q: "Ada kebakaranh hebat, bantu mobil pemadam!",
+      icon: "🚒",
+      ans: "Hidran Air 🚰",
+      paths: ["Hidran Air 🚰", "Pom Bensin ⛽", "Toko Roti 🍞"],
+    },
+    {
+      q: "Adik bayi menangis haus, beri apa?",
+      icon: "👶",
+      ans: "Botol Susu 🍼",
+      paths: ["Botol Susu 🍼", "Kopi ☕", "Cabai 🌶️"],
+    },
+    {
+      q: "Petani ingin menanam padi, di mana?",
+      icon: "👨‍🌾",
+      ans: "Sawah 🌾",
+      paths: ["Gurun 🌵", "Sawah 🌾", "Kantor 🏢"],
+    },
+    {
+      q: "Juara satu lomba lari, apa hadiahnya?",
+      icon: "🏃",
+      ans: "Trofi 🏆",
+      paths: ["Trofi 🏆", "Sampah 🗑️", "Batu 🪨"],
+    },
+    {
+      q: "Orang sakit butuh obat, ke mana?",
+      icon: "🤒",
+      ans: "Apotek/Rumah Sakit 🏥",
+      paths: ["Pasar 🧺", "Apotek/Rumah Sakit 🏥", "Taman 🌳"],
+    },
+  ],
+  animal_matching: [
+    { parent: "Sapi 🐄", child: "Anak Sapi 🐮" },
+    { parent: "Ayam Betina 🐔", child: "Anak Ayam 🐣" },
+    { parent: "Kucing 🐈", child: "Anak Kucing 🐱" },
+    { parent: "Anjing 🐕", child: "Anak Anjing 🐶" },
+    { parent: "Kuda 🐎", child: "Anak Kuda 🐴" },
+    { parent: "Katak 🐸", child: "Berudu 🪱" },
+    { parent: "Babi 🐖", child: "Anak Babi 🐷" },
+    { parent: "Singa 🦁", child: "Anak Singa 🐯" },
+    { parent: "Harimau 🐅", child: "Anak Harimau 🐯" },
+    { parent: "Bebek 🦆", child: "Anak Bebek 🐥" },
+    { parent: "Paus 🐳", child: "Anak Paus 🐋" },
+    { parent: "Domba 🐑", child: "Cempe (Anak Domba) 🐑" },
+    { parent: "Kambing 🐐", child: "Anak Kambing 🐐" },
+    { parent: "Monyet 🐒", child: "Anak Monyet 🐵" },
+    { parent: "Kupu-Kupu 🦋", child: "Ulat Bulu 🐛" },
+    { parent: "Angsa 🦢", child: "Anak Angsa 🦢" },
+    { parent: "Panda 🐼", child: "Anak Panda 🐼" },
+    { parent: "Penguin 🐧", child: "Anak Penguin 🐧" },
+    { parent: "Burung Hantu 🦉", child: "Anak Burung Hantu 🦉" },
+    { parent: "Rusa 🦌", child: "Anak Rusa 🦌" },
+    { parent: "Gajah 🐘", child: "Anak Gajah 🐘" },
+    { parent: "Kangguru 🦘", child: "Anak Kangguru 🦘" },
+    { parent: "Buaya 🐊", child: "Anak Buaya 🐊" },
+    { parent: "Ular 🐍", child: "Anak Ular 🐍" },
+    { parent: "Kura-kura 🐢", child: "Anak Kura-kura 🐢" },
+    { parent: "Zebra 🦓", child: "Anak Zebra 🦓" },
+    { parent: "Jerapah 🦒", child: "Anak Jerapah 🦒" },
+    { parent: "Gorila 🦍", child: "Anak Gorila 🦍" },
+    { parent: "Hamster 🐹", child: "Anak Hamster 🐹" },
+    { parent: "Tupai 🐿️", child: "Anak Tupai 🐿️" },
+    { parent: "Koala 🐨", child: "Anak Koala 🐨" },
+    { parent: "Landak 🦔", child: "Anak Landak 🦔" },
+    { parent: "Kasuari 🐦", child: "Anak Kasuari 🐦" },
+  ],
+  missing_letter: [
+    { word: "B_KU", full: "BUKU", correct: "U", options: ["A", "I", "U"] },
+    { word: "A_EL", full: "APEL", correct: "P", options: ["M", "P", "K"] },
+    { word: "B_LA", full: "BOLA", correct: "O", options: ["E", "O", "I"] },
+    { word: "ME_A", full: "MEJA", correct: "J", options: ["J", "R", "L"] },
+    { word: "S_PI", full: "SAPI", correct: "A", options: ["U", "A", "O"] },
+    { word: "M_TA", full: "MATA", correct: "A", options: ["A", "O", "E"] },
+    { word: "GI_I", full: "GIGI", correct: "G", options: ["P", "T", "G"] },
+    { word: "_UDA", full: "KUDA", correct: "K", options: ["K", "M", "S"] },
+    { word: "IK_N", full: "IKAN", correct: "A", options: ["O", "A", "E"] },
+    { word: "A_AM", full: "AYAM", correct: "Y", options: ["J", "L", "Y"] },
+    { word: "S_SU", full: "SUSU", correct: "U", options: ["A", "U", "I"] },
+    { word: "R_TI", full: "ROTI", correct: "O", options: ["E", "A", "O"] },
+    { word: "G_RU", full: "GURU", correct: "U", options: ["I", "E", "U"] },
+    { word: "T_PI", full: "TOPI", correct: "O", options: ["A", "O", "U"] },
+    { word: "M_DU", full: "MADU", correct: "A", options: ["O", "E", "A"] },
+    { word: "BA_U", full: "BAJU", correct: "J", options: ["L", "J", "R"] },
+    { word: "P_NA", full: "PENA", correct: "E", options: ["A", "E", "O"] },
+    { word: "U_AR", full: "ULAR", correct: "L", options: ["M", "L", "K"] },
+    { word: "B_RU", full: "BIRU", correct: "I", options: ["A", "I", "O"] },
+    { word: "C_CI", full: "CUCI", correct: "U", options: ["I", "U", "E"] },
+    { word: "P_TA", full: "PETA", correct: "E", options: ["A", "E", "O"] },
+    { word: "T_RU", full: "TIRE", correct: "A", options: ["A", "O", "E"] },
+    { word: "B_TA", full: "BATA", correct: "A", options: ["A", "U", "I"] },
+    { word: "P_KU", full: "PAKU", correct: "A", options: ["A", "O", "U"] },
+    { word: "G_LA", full: "GULA", correct: "U", options: ["I", "U", "E"] },
+    { word: "J_M", full: "JAM", correct: "A", options: ["A", "O", "U"] },
+    { word: "T_S", full: "TAS", correct: "A", options: ["E", "A", "U"] },
+    { word: "P_NA", full: "PENA", correct: "E", options: ["I", "E", "A"] },
+    { word: "D_SI", full: "DASI", correct: "A", options: ["A", "O", "U"] },
+    { word: "R_DA", full: "RODA", correct: "O", options: ["A", "O", "U"] },
+    { word: "S_RU", full: "SERU", correct: "E", options: ["I", "E", "U"] },
+    { word: "B_RU", full: "BIRU", correct: "I", options: ["A", "I", "U"] },
+    { word: "M_RU", full: "MAU", correct: "A", options: ["A", "O", "E"] },
+    { word: "P_DI", full: "PADI", correct: "A", options: ["A", "O", "U"] },
+    { word: "D_UN", full: "DAUN", correct: "A", options: ["A", "E", "O"] },
+    { word: "A_AR", full: "AKAR", correct: "K", options: ["K", "M", "L"] },
+    { word: "B_MI", full: "BUMI", correct: "U", options: ["A", "U", "O"] },
+    { word: "A_AN", full: "AWAN", correct: "W", options: ["W", "M", "L"] },
+    { word: "A_I", full: "API", correct: "P", options: ["P", "T", "M"] },
+  ],
+  flying_animal: [
+    "Burung 🐦",
+    "Kupu-kupu 🦋",
+    "Kelelawar 🦇",
+    "Lebah 🐝",
+    "Lalat 🪰",
+    "Nyamuk 🦟",
+    "Burung Hantu 🦉",
+    "Merpati 🕊️",
+    "Elang 🦅",
+    "Kumbang 🐞",
+    "Burung Beo 🦜",
+    "Capung 🚁",
+    "Kunang-kunang 🌟",
+    "Pelikan 🦤",
+    "Gagak 🐦‍⬛",
+    "Bangau 🦢",
+    "Belalang 🦗",
+    "Ngengat 🦋",
+    "Burung Unta 🐦",
+    "Burung Cendrawasih 🐦",
+    "Burung Kakaktua 🦜",
+    "Burung Pelatuk 🐦",
+    "Burung Kolibri 🐦",
+    "Burung Walet 🐦",
+    "Burung Dara 🕊️",
+    "Burung Rajawali 🦅",
+    "Burung Nazar 🦅",
+    "Pterodactyl 🦖",
+    "Capung 🚁",
+    "Kumbang Tanduk 🪲",
+    "Semut Terbang 🐜",
+    "Rayap Terbang 🐜",
+    "Laron 🐜",
+  ],
+  water_animal: [
+    "Ikan 🐟",
+    "Gurita 🐙",
+    "Paus 🐳",
+    "Lumba-lumba 🐬",
+    "Hiu 🦈",
+    "Kepiting 🦀",
+    "Udang 🦐",
+    "Kuda Laut 🦦",
+    "Cumi-cumi 🦑",
+    "Bintang Laut ⭐",
+    "Anjing Laut 🦭",
+    "Walrus 🦭",
+    "Belut 🐍",
+    "Pinguin 🐧",
+    "Ubur-ubur 🪼",
+    "Karang 🪸",
+    "Paus Orca 🐋",
+    "Kura-kura Laut 🐢",
+    "Berang-berang 🦦",
+    "Ikan Pari 🐟",
+    "Ikan Badut 🐠",
+    "Ikan Mas 🐟",
+    "Ikan Mujair 🐟",
+    "Ikan Lele 🐟",
+    "Ikan Gabus 🐟",
+    "Ikan Arwana 🐟",
+    "Ikan Koi 🐟",
+    "Ikan Cupang 🐟",
+    "Ikan Teri 🐟",
+    "Ikan Kakap 🐟",
+    "Ikan Kerapu 🐟",
+    "Ikan Salmon 🐟",
+    "Ikan Tuna 🐟",
+    "Ikan Tongkol 🐟",
+  ],
   gameInfo: {
     animal: {
       title: "Tebak Hewan",
@@ -1970,6 +2915,204 @@ const CONFIG = {
       rules: "Lihat cuacanya dan pilih kegiatan yang paling cocok!",
       points: 15,
     },
+    time_sequence: {
+      title: "Hari & Bulan",
+      rules: "Amati urutan waktunya dan lengkapi hari atau bulan yang hilang!",
+      points: 20,
+    },
+    transport: {
+      title: "Transportasi",
+      rules: "Tebak di mana kendaraan ini biasanya berada!",
+      points: 15,
+    },
+    family: {
+      title: "Keluarga Kita",
+      rules: "Tebak siapakah anggota keluarga yang dimaksud!",
+      points: 25,
+    },
+    food_sort: {
+      title: "Sayur & Buah",
+      rules: "Kelompokkan makanan ini ke dalam Sayur atau Buah!",
+      points: 20,
+    },
+    hygiene: {
+      title: "Kebersihan Diri",
+      rules: "Pilih alat yang tepat untuk merawat kebersihan tubuhmu!",
+      points: 15,
+    },
+    school: {
+      title: "Alat Sekolah",
+      rules: "Tebak alat sekolah apa yang sedang diceritakan!",
+      points: 20,
+    },
+    shopping: {
+      title: "Toko Kecil",
+      rules:
+        "Bantu ibu belanja dengan memasukkan barang yang sesuai ke keranjang!",
+      points: 25,
+    },
+    word_scramble: {
+      title: "Susun Kata",
+      rules: "Susun huruf-huruf yang acak menjadi nama benda yang benar!",
+      points: 25,
+    },
+    maze: {
+      title: "Labirin Edukasi",
+      rules: "Pilih jalan yang benar di labirin untuk sampai ke tujuan!",
+      points: 30,
+    },
+    animal_matching: {
+      title: "Induk & Anak Hewan",
+      rules: "Cari induk dari anak hewan pintar ini!",
+      points: 20,
+    },
+    number_sort: {
+      title: "Urutkan Angka",
+      rules:
+        "Tekan tombol angka secara berurutan dari yang terkecil hingga terbesar!",
+      points: 25,
+    },
+    missing_letter: {
+      title: "Huruf Hilang",
+      rules: "Pilih huruf yang tepat untuk melengkapi kata!",
+      points: 20,
+    },
+    direction: {
+      title: "Belajar Arah",
+      rules: "Tebak huruf atau benda yang menghadap ke arah pertanyaanku!",
+      points: 15,
+    },
+    flying_animal: {
+      title: "Hewan Terbang",
+      rules: "Dapatkah kamu menebak mana hewan yang pandai terbang?",
+      points: 15,
+    },
+    water_animal: {
+      title: "Hewan Air",
+      rules: "Klik pada hewan yang hidup di dalam air!",
+      points: 15,
+    },
+    catch_ball: {
+      title: "Tangkap Bola",
+      rules:
+        "Geser keranjang ke kiri dan kanan untuk menangkap bola yang jatuh!",
+      points: 30,
+    },
+    fast_target: {
+      title: "Klik Target Cepat",
+      rules: "Tekan lingkaran target secepat mungkin sebelum menghilang!",
+      points: 25,
+    },
+    balloon_pop: {
+      title: "Balon Pop",
+      rules: "Pecahkan semua balon yang terbang ke atas layar!",
+      points: 20,
+    },
+    catch_star: {
+      title: "Tangkap Bintang",
+      rules: "Gerakkan karakter untuk menangkap bintang jatuh!",
+      points: 30,
+    },
+    bug_smash: {
+      title: "Klik Serangga",
+      rules: "Tangkap serangga nakal yang berlarian di layar!",
+      points: 25,
+    },
+    drag_fruit: {
+      title: "Drag Buah",
+      rules: "Geser buah-buahan segar ini ke dalam keranjangnya!",
+      points: 20,
+    },
+    shape_hole: {
+      title: "Cocokkan Bentuk",
+      rules: "Tarik bentuk potongan ini ke dalam lubang yang pas!",
+      points: 25,
+    },
+    block_stack: {
+      title: "Susun Balok",
+      rules: "Susun balok dengan rapi agar tidak terjatuh!",
+      points: 30,
+    },
+    draw_line: {
+      title: "Tarik Garis",
+      rules: "Tarik garis lurus untuk menghubungkan dua benda yang sama!",
+      points: 20,
+    },
+    bubble_pop: {
+      title: "Tekan Gelembung",
+      rules: "Pecahkan semua gelembung yang beterbangan!",
+      points: 15,
+    },
+    whack_mole: {
+      title: "Pukul Mole",
+      rules: "Pukul tikus tanah yang bersembunyi di dalam lubang!",
+      points: 30,
+    },
+    find_object: {
+      title: "Cari Objek",
+      rules: "Cari dan ketuk mainan yang bersembunyi di layar!",
+      points: 25,
+    },
+    sliding_puzzle: {
+      title: "Puzzle Geser",
+      rules: "Geser kotak ke ruang kosong untuk menyusun gambarnya!",
+      points: 50,
+    },
+    coloring: {
+      title: "Mewarnai",
+      rules: "Pilih warna lalu ketuk gambar untuk mewarnai!",
+      points: 20,
+    },
+    digital_clock: {
+      title: "Jam Digital",
+      rules: "Tebak cara membaca jam digital yang benar!",
+      points: 20,
+    },
+    ensiklo_indo: {
+      title: "Ensiklopedia Indonesia",
+      rules: "Buka ensiklopedia hewan asli Indonesia yang sangat unik!",
+      points: 0,
+    },
+    physics_stack: {
+      title: "Menumpuk Menara",
+      rules: "Susun benda setinggi mungkin tanpa menjatuhkannya!",
+      points: 10,
+    },
+    pizza_fraction: {
+      title: "Koki Cilik",
+      rules: "Belajar mengenal potongan pecahan lewat pizza yang lezat!",
+      points: 30,
+    },
+    weather_clothes: {
+      title: "Jemuran Ajaib",
+      rules: "Pasangkan pakaian yang cocok dengan cuaca di luar jendela!",
+      points: 25,
+    },
+    bee_coding: {
+      title: "Jalan Pulang Lebah",
+      rules: "Susun perintah jalan agar Lebah sampai ke bunganya!",
+      points: 50,
+    },
+    fossil_gali: {
+      title: "Arkeolog Cilik",
+      rules: "Gali dan bersihkan pasir untuk menemukan fosil dinosaurus!",
+      points: 40,
+    },
+    fruit_balance: {
+      title: "Timbangan Buah",
+      rules: "Belajar menyeimbangkan berat benda dengan jumlah buah!",
+      points: 35,
+    },
+    tooth_brush: {
+      title: "Gosok Gigi",
+      rules: "Bantu bersihkan kuman cokelat di gigi sampai putih berkilau!",
+      points: 20,
+    },
+    taxonomy_sort: {
+      title: "Kelompokkan Hewan",
+      rules: "Urutkan hewan berdasarkan jenis dan ciri-cirinya!",
+      points: 35,
+    },
   },
 };
 
@@ -2021,6 +3164,8 @@ function startGame(type) {
   currentState.gameType = type;
   currentState.score = 0;
   currentState.currentStep = 0;
+  currentState.lastScrollPosition =
+    window.scrollY || document.documentElement.scrollTop;
 
   document.getElementById("home").style.display = "none";
   document.getElementById("game-view").classList.add("active");
@@ -2029,9 +3174,24 @@ function startGame(type) {
 }
 
 function goHome() {
+  // Call any game specific cleanup if it exists
+  if (currentState.extra && typeof currentState.extra.cleanup === "function") {
+    currentState.extra.cleanup();
+  }
+
+  currentState.extra = {}; // reset extra state logic for next games
+
   document.getElementById("home").style.display = "block";
   document.getElementById("game-view").classList.remove("active");
   document.getElementById("game-container").innerHTML = "";
+
+  // Restore scroll position
+  if (currentState.lastScrollPosition !== undefined) {
+    window.scrollTo({
+      top: currentState.lastScrollPosition,
+      behavior: "instant",
+    });
+  }
 }
 
 function initGame() {
@@ -2138,6 +3298,168 @@ function runGameLogic() {
       break;
     case "weather":
       renderWeatherGame();
+      break;
+    case "time_sequence":
+      renderTimeSequenceGame();
+      break;
+    case "transport":
+      renderTransportGame();
+      break;
+    case "family":
+      renderFamilyGame();
+      break;
+    case "food_sort":
+      renderFoodSortGame();
+      break;
+    case "hygiene":
+      renderHygieneGame();
+      break;
+    case "school":
+      renderSchoolGame();
+      break;
+    case "shopping":
+      renderShoppingGame();
+      break;
+    case "word_scramble":
+      renderWordScrambleGame();
+      break;
+    case "maze":
+      renderMazeGame();
+      break;
+    case "animal_matching":
+      renderAnimalMatchingGame();
+      break;
+    case "number_sort":
+      renderNumberSortGame();
+      break;
+    case "missing_letter":
+      renderMissingLetterGame();
+      break;
+    case "direction":
+      renderDirectionGame();
+      break;
+    case "flying_animal":
+      renderFlyingAnimalGame();
+      break;
+    case "water_animal":
+      renderWaterAnimalGame();
+      break;
+    case "catch_ball":
+      renderCatchBallGame();
+      break;
+    case "fast_target":
+      renderFastTargetGame();
+      break;
+    case "balloon_pop":
+      renderBalloonPopGame();
+      break;
+    case "catch_star":
+      renderCatchStarGame();
+      break;
+    case "bug_smash":
+      renderBugSmashGame();
+      break;
+    case "drag_fruit":
+      renderDragFruitGame();
+      break;
+    case "shape_hole":
+      renderShapeHoleGame();
+      break;
+    case "block_stack":
+      renderBlockStackGame();
+      break;
+    case "draw_line":
+      renderDrawLineGame();
+      break;
+    case "bubble_pop":
+      renderBubblePopGame();
+      break;
+    case "whack_mole":
+      renderWhackMoleGame();
+      break;
+    case "find_object":
+      renderFindObjectGame();
+      break;
+    case "sliding_puzzle":
+      renderSlidingPuzzleGame();
+      break;
+    case "coloring":
+      renderColoringGame();
+      break;
+    case "digital_clock":
+      renderDigitalClockGame();
+      break;
+    case "ensiklo_indo":
+      renderEnsikloGame();
+      break;
+    case "physics_stack":
+      renderPhysicsStackGame();
+      break;
+    case "pizza_fraction":
+      renderPizzaFractionGame();
+      break;
+    case "weather_clothes":
+      renderWeatherClothesGame();
+      break;
+    case "bee_coding":
+      renderBeeCodingGame();
+      break;
+    case "fossil_gali":
+      renderFossilGaliGame();
+      break;
+    case "fruit_balance":
+      renderFruitBalanceGame();
+      break;
+    case "tooth_brush":
+      renderToothBrushGame();
+      break;
+    case "taxonomy_sort":
+      renderTaxonomyGame();
+      break;
+    case "symmetry_play":
+      renderSymmetryGame();
+      break;
+    case "life_cycle":
+      renderLifeCycleGame();
+      break;
+    case "map_explorer":
+      renderMapExplorerGame();
+      break;
+    case "fossil_match":
+      renderFossilMatchGame();
+      break;
+    case "recipe_steps":
+      renderRecipeGame();
+      break;
+    case "sempoa_cilik":
+      renderSempoaGame();
+      break;
+    case "hidden_objects":
+      renderHiddenObjectsGame();
+      break;
+    case "packing_master":
+      renderPackingGame();
+      break;
+    case "constellations":
+      renderConstellationGame();
+      break;
+    case "aim_practice":
+      renderAimGame();
+      break;
+    case "line_tracer":
+      renderLineTracerGame();
+      break;
+    case "laundry_sort":
+      renderLaundryGame();
+      break;
+    case "healthy_plate":
+      renderHealthyPlateGame();
+      break;
+    case "home_safety":
+      renderHomeSafetyGame();
+      break;
+    case "recycle_factory":
+      renderRecycleGame();
       break;
   }
 }

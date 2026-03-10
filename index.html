@@ -44,112 +44,360 @@
           <p id="welcome-msg">Ayo bermain sambil belajar!</p>
         </header>
 
-        <div class="game-grid">
-          <div class="game-card" onclick="startGame('animal')">
-            <span class="icon">🐶</span>
-            <h3>Tebak Hewan</h3>
+        <!-- 1. Bahasa & Pengetahuan -->
+        <section class="category-section">
+          <div class="category-title"><span>🧠</span> Bahasa & Pengetahuan</div>
+          <div class="game-grid">
+            <div class="game-card" onclick="startGame('animal')">
+              <span class="icon">🐶</span>
+              <h3>Tebak Hewan</h3>
+            </div>
+            <div class="game-card" onclick="startGame('alphabet')">
+              <span class="icon">🔤</span>
+              <h3>Belajar Huruf</h3>
+            </div>
+            <div class="game-card" onclick="startGame('word_scramble')">
+              <span class="icon">✏️</span>
+              <h3>Susun Kata</h3>
+            </div>
+            <div class="game-card" onclick="startGame('missing_letter')">
+              <span class="icon">✍️</span>
+              <h3>Isi Huruf Hilang</h3>
+            </div>
+            <div class="game-card" onclick="startGame('ensiklo_indo')">
+              <span class="icon">🐾</span>
+              <h3>Ensiklopedia RI</h3>
+            </div>
+            <div class="game-card" onclick="startGame('taxonomy_sort')">
+              <span class="icon">🐈</span>
+              <h3>Jenis Hewan</h3>
+            </div>
+            <div class="game-card" onclick="startGame('job')">
+              <span class="icon">🚒</span>
+              <h3>Pekerjaan</h3>
+            </div>
+            <div class="game-card" onclick="startGame('habitat')">
+              <span class="icon">🏠</span>
+              <h3>Rumah Hewan</h3>
+            </div>
+            <div class="game-card" onclick="startGame('body')">
+              <span class="icon">👃</span>
+              <h3>Anggota Tubuh</h3>
+            </div>
+            <div class="game-card" onclick="startGame('traffic')">
+              <span class="icon">🚦</span>
+              <h3>Rambu Jalan</h3>
+            </div>
+            <div class="game-card" onclick="startGame('space')">
+              <span class="icon">🪐</span>
+              <h3>Tata Surya</h3>
+            </div>
+            <div class="game-card" onclick="startGame('music')">
+              <span class="icon">🎻</span>
+              <h3>Alat Musik</h3>
+            </div>
+            <div class="game-card" onclick="startGame('flags')">
+              <span class="icon">🏁</span>
+              <h3>Bendera Dunia</h3>
+            </div>
+            <div class="game-card" onclick="startGame('family')">
+              <span class="icon">👪</span>
+              <h3>Keluarga</h3>
+            </div>
+            <div class="game-card" onclick="startGame('school')">
+              <span class="icon">🏫</span>
+              <h3>Alat Sekolah</h3>
+            </div>
+            <div class="game-card" onclick="startGame('flying_animal')">
+              <span class="icon">🦅</span>
+              <h3>Hewan Terbang</h3>
+            </div>
+            <div class="game-card" onclick="startGame('water_animal')">
+              <span class="icon">🐟</span>
+              <h3>Hewan Air</h3>
+            </div>
+            <div class="game-card" onclick="startGame('life_cycle')">
+              <span class="icon">🌱</span>
+              <h3>Siklus Hidup</h3>
+            </div>
+            <div class="game-card" onclick="startGame('fossil_match')">
+              <span class="icon">🦖</span>
+              <h3>Museum Fosil</h3>
+            </div>
           </div>
-          <div class="game-card" onclick="startGame('alphabet')">
-            <span class="icon">🔤</span>
-            <h3>Belajar Huruf</h3>
+        </section>
+
+        <!-- 2. Logika & Matematika -->
+        <section class="category-section">
+          <div class="category-title"><span>➕</span> Logika & Matematika</div>
+          <div class="game-grid">
+            <div class="game-card" onclick="startGame('math')">
+              <span class="icon">🧮</span>
+              <h3>Matematika</h3>
+            </div>
+            <div class="game-card" onclick="startGame('counting')">
+              <span class="icon">🔢</span>
+              <h3>Menghitung</h3>
+            </div>
+            <div class="game-card" onclick="startGame('pizza_fraction')">
+              <span class="icon">🍕</span>
+              <h3>Koki Cilik</h3>
+            </div>
+            <div class="game-card" onclick="startGame('number_sort')">
+              <span class="icon">📊</span>
+              <h3>Urutkan Angka</h3>
+            </div>
+            <div class="game-card" onclick="startGame('pattern')">
+              <span class="icon">🧩</span>
+              <h3>Lengkapi Pola</h3>
+            </div>
+            <div class="game-card" onclick="startGame('fruit_balance')">
+              <span class="icon">⚖️</span>
+              <h3>Timbangan Buah</h3>
+            </div>
+            <div class="game-card" onclick="startGame('clock')">
+              <span class="icon">⏰</span>
+              <h3>Belajar Jam</h3>
+            </div>
+            <div class="game-card" onclick="startGame('digital_clock')">
+              <span class="icon">⌚</span>
+              <h3>Jam Digital</h3>
+            </div>
+            <div class="game-card" onclick="startGame('shapeMatch')">
+              <span class="icon">📐</span>
+              <h3>Mengenal Bentuk</h3>
+            </div>
+            <div class="game-card" onclick="startGame('time_sequence')">
+              <span class="icon">📅</span>
+              <h3>Hari & Bulan</h3>
+            </div>
+            <div class="game-card" onclick="startGame('direction')">
+              <span class="icon">🧭</span>
+              <h3>Belajar Arah</h3>
+            </div>
+            <div class="game-card" onclick="startGame('opposite')">
+              <span class="icon">↔️</span>
+              <h3>Lawan Kata</h3>
+            </div>
+            <div class="game-card" onclick="startGame('bee_coding')">
+              <span class="icon">🐝</span>
+              <h3>Coding Lebah</h3>
+            </div>
+            <div class="game-card" onclick="startGame('sempoa_cilik')">
+              <span class="icon">🧮</span>
+              <h3>Sempoa Cilik</h3>
+            </div>
+            <div class="game-card" onclick="startGame('map_explorer')">
+              <span class="icon">🗺️</span>
+              <h3>Penjelajah Peta</h3>
+            </div>
+            <div class="game-card" onclick="startGame('recipe_steps')">
+              <span class="icon">🥪</span>
+              <h3>Urutan Resep</h3>
+            </div>
           </div>
-          <div class="game-card" onclick="startGame('math')">
-            <span class="icon">🧮</span>
-            <h3>Matematika</h3>
+        </section>
+
+        <!-- 3. Sensorik & Visual -->
+        <section class="category-section">
+          <div class="category-title"><span>🎨</span> Sensorik & Visual</div>
+          <div class="game-grid">
+            <div class="game-card" onclick="startGame('color')">
+              <span class="icon">🎨</span>
+              <h3>Tebak Warna</h3>
+            </div>
+            <div class="game-card" onclick="startGame('mixing')">
+              <span class="icon">🌈</span>
+              <h3>Campur Warna</h3>
+            </div>
+            <div class="game-card" onclick="startGame('odd')">
+              <span class="icon">🔍</span>
+              <h3>Cari Perbedaan</h3>
+            </div>
+            <div class="game-card" onclick="startGame('shadow')">
+              <span class="icon">👤</span>
+              <h3>Teka-teki Bayangan</h3>
+            </div>
+            <div class="game-card" onclick="startGame('emotion')">
+              <span class="icon">🎭</span>
+              <h3>Mengenal Emosi</h3>
+            </div>
+            <div class="game-card" onclick="startGame('scale')">
+              <span class="icon">⚖️</span>
+              <h3>Besar & Kecil</h3>
+            </div>
+            <div class="game-card" onclick="startGame('find_object')">
+              <span class="icon">🔎</span>
+              <h3>Cari Objek</h3>
+            </div>
+            <div class="game-card" onclick="startGame('weather')">
+              <span class="icon">🌦️</span>
+              <h3>Cuaca & Musim</h3>
+            </div>
+            <div class="game-card" onclick="startGame('food_sort')">
+              <span class="icon">🥦</span>
+              <h3>Sayur & Buah</h3>
+            </div>
+            <div class="game-card" onclick="startGame('animal_matching')">
+              <span class="icon">🐔</span>
+              <h3>Induk & Anak</h3>
+            </div>
+            <div class="game-card" onclick="startGame('symmetry_play')">
+              <span class="icon">🪞</span>
+              <h3>Cermin Ajaib</h3>
+            </div>
+            <div class="game-card" onclick="startGame('hidden_objects')">
+              <span class="icon">🔍</span>
+              <h3>Cari Benda</h3>
+            </div>
+            <div class="game-card" onclick="startGame('constellations')">
+              <span class="icon">🌑</span>
+              <h3>Teropong Bintang</h3>
+            </div>
           </div>
-          <div class="game-card" onclick="startGame('puzzle')">
-            <span class="icon">🧩</span>
-            <h3>Puzzle Seru</h3>
+        </section>
+
+        <!-- 4. Motorik & Ketangkasan -->
+        <section class="category-section">
+          <div class="category-title"><span>⚡</span> Motorik & Ketangkasan</div>
+          <div class="game-grid">
+            <div class="game-card" onclick="startGame('puzzle')">
+              <span class="icon">🧩</span>
+              <h3>Puzzle Seru</h3>
+            </div>
+            <div class="game-card" onclick="startGame('memory')">
+              <span class="icon">🃏</span>
+              <h3>Kartu Memori</h3>
+            </div>
+            <div class="game-card" onclick="startGame('maze')">
+              <span class="icon">🌀</span>
+              <h3>Labirin Edukasi</h3>
+            </div>
+            <div class="game-card" onclick="startGame('catch_ball')">
+              <span class="icon">🏀</span>
+              <h3>Tangkap Bola</h3>
+            </div>
+            <div class="game-card" onclick="startGame('fast_target')">
+              <span class="icon">🎯</span>
+              <h3>Klik Target</h3>
+            </div>
+            <div class="game-card" onclick="startGame('balloon_pop')">
+              <span class="icon">🎈</span>
+              <h3>Balon Pop</h3>
+            </div>
+            <div class="game-card" onclick="startGame('catch_star')">
+              <span class="icon">⭐</span>
+              <h3>Tangkap Bintang</h3>
+            </div>
+            <div class="game-card" onclick="startGame('bug_smash')">
+              <span class="icon">🐞</span>
+              <h3>Klik Serangga</h3>
+            </div>
+            <div class="game-card" onclick="startGame('drag_fruit')">
+              <span class="icon">🧺</span>
+              <h3>Drag Buah</h3>
+            </div>
+            <div class="game-card" onclick="startGame('shape_hole')">
+              <span class="icon">🧩</span>
+              <h3>Cocokkan Bentuk</h3>
+            </div>
+            <div class="game-card" onclick="startGame('block_stack')">
+              <span class="icon">🧱</span>
+              <h3>Susun Balok</h3>
+            </div>
+            <div class="game-card" onclick="startGame('draw_line')">
+              <span class="icon">🖍️</span>
+              <h3>Tarik Garis</h3>
+            </div>
+            <div class="game-card" onclick="startGame('bubble_pop')">
+              <span class="icon">🫧</span>
+              <h3>Tekan Gelembung</h3>
+            </div>
+            <div class="game-card" onclick="startGame('whack_mole')">
+              <span class="icon">🔨</span>
+              <h3>Pukul Mole</h3>
+            </div>
+            <div class="game-card" onclick="startGame('sliding_puzzle')">
+              <span class="icon">🧩</span>
+              <h3>Puzzle Geser</h3>
+            </div>
+            <div class="game-card" onclick="startGame('coloring')">
+              <span class="icon">🎨</span>
+              <h3>Mewarnai</h3>
+            </div>
+            <div class="game-card" onclick="startGame('physics_stack')">
+              <span class="icon">🏗️</span>
+              <h3>Susun Menara</h3>
+            </div>
+            <div class="game-card" onclick="startGame('fossil_gali')">
+              <span class="icon">🦖</span>
+              <h3>Gali Fosil</h3>
+            </div>
+            <div class="game-card" onclick="startGame('aim_practice')">
+              <span class="icon">🏹</span>
+              <h3>Panah Target</h3>
+            </div>
+            <div class="game-card" onclick="startGame('line_tracer')">
+              <span class="icon">🧶</span>
+              <h3>Jejak Tali</h3>
+            </div>
+            <div class="game-card" onclick="startGame('packing_master')">
+              <span class="icon">📦</span>
+              <h3>Packing Master</h3>
+            </div>
           </div>
-          <div class="game-card" onclick="startGame('memory')">
-            <span class="icon">🃏</span>
-            <h3>Kartu Memori</h3>
+        </section>
+
+        <!-- 5. Kebiasaan & Karakter -->
+        <section class="category-section">
+          <div class="category-title"><span>🌟</span> Kebiasaan & Karakter</div>
+          <div class="game-grid">
+            <div class="game-card" onclick="startGame('habit')">
+              <span class="icon">⭐</span>
+              <h3>Kebiasaan Baik</h3>
+            </div>
+            <div class="game-card" onclick="startGame('hygiene')">
+              <span class="icon">🧽</span>
+              <h3>Kebersihan Diri</h3>
+            </div>
+            <div class="game-card" onclick="startGame('shopping')">
+              <span class="icon">🛒</span>
+              <h3>Toko Kecil</h3>
+            </div>
+            <div class="game-card" onclick="startGame('weather_clothes')">
+              <span class="icon">👕</span>
+              <h3>Jemuran Ajaib</h3>
+            </div>
+            <div class="game-card" onclick="startGame('tooth_brush')">
+              <span class="icon">🦷</span>
+              <h3>Gosok Gigi</h3>
+            </div>
+            <div class="game-card" onclick="startGame('trash')">
+              <span class="icon">♻️</span>
+              <h3>Pilah Sampah</h3>
+            </div>
+            <div class="game-card" onclick="startGame('transport')">
+              <span class="icon">✈️</span>
+              <h3>Transportasi</h3>
+            </div>
+            <div class="game-card" onclick="startGame('laundry_sort')">
+              <span class="icon">🧺</span>
+              <h3>Laundri Cilik</h3>
+            </div>
+            <div class="game-card" onclick="startGame('healthy_plate')">
+              <span class="icon">🥪</span>
+              <h3>Bekal Sehat</h3>
+            </div>
+            <div class="game-card" onclick="startGame('home_safety')">
+              <span class="icon">🔌</span>
+              <h3>Detektif Aman</h3>
+            </div>
+            <div class="game-card" onclick="startGame('recycle_factory')">
+              <span class="icon">♻️</span>
+              <h3>Daur Ulang</h3>
+            </div>
           </div>
-          <div class="game-card" onclick="startGame('color')">
-            <span class="icon">🎨</span>
-            <h3>Tebak Warna</h3>
-          </div>
-          <div class="game-card" onclick="startGame('habit')">
-            <span class="icon">⭐</span>
-            <h3>Kebiasaan Baik</h3>
-          </div>
-          <div class="game-card" onclick="startGame('odd')">
-            <span class="icon">🔍</span>
-            <h3>Cari yang Berbeda</h3>
-          </div>
-          <div class="game-card" onclick="startGame('counting')">
-            <span class="icon">🔢</span>
-            <h3>Menghitung Benda</h3>
-          </div>
-          <div class="game-card" onclick="startGame('pattern')">
-            <span class="icon">🧩</span>
-            <h3>Lengkapi Pola</h3>
-          </div>
-          <div class="game-card" onclick="startGame('shadow')">
-            <span class="icon">👤</span>
-            <h3>Teka-teki Bayangan</h3>
-          </div>
-          <div class="game-card" onclick="startGame('emotion')">
-            <span class="icon">🎭</span>
-            <h3>Mengenal Emosi</h3>
-          </div>
-          <div class="game-card" onclick="startGame('scale')">
-            <span class="icon">⚖️</span>
-            <h3>Besar & Kecil</h3>
-          </div>
-          <div class="game-card" onclick="startGame('opposite')">
-            <span class="icon">↔️</span>
-            <h3>Lawan Kata</h3>
-          </div>
-          <div class="game-card" onclick="startGame('job')">
-            <span class="icon">🚒</span>
-            <h3>Pekerjaan</h3>
-          </div>
-          <div class="game-card" onclick="startGame('habitat')">
-            <span class="icon">🏠</span>
-            <h3>Rumah Hewan</h3>
-          </div>
-          <div class="game-card" onclick="startGame('mixing')">
-            <span class="icon">🌈</span>
-            <h3>Campur Warna</h3>
-          </div>
-          <div class="game-card" onclick="startGame('trash')">
-            <span class="icon">♻️</span>
-            <h3>Pilah Sampah</h3>
-          </div>
-          <div class="game-card" onclick="startGame('shapeMatch')">
-            <span class="icon">📐</span>
-            <h3>Mengenal Bentuk</h3>
-          </div>
-          <div class="game-card" onclick="startGame('clock')">
-            <span class="icon">⏰</span>
-            <h3>Belajar Jam</h3>
-          </div>
-          <div class="game-card" onclick="startGame('body')">
-            <span class="icon">👃</span>
-            <h3>Anggota Tubuh</h3>
-          </div>
-          <div class="game-card" onclick="startGame('traffic')">
-            <span class="icon">🚦</span>
-            <h3>Rambu Jalan</h3>
-          </div>
-          <div class="game-card" onclick="startGame('space')">
-            <span class="icon">🪐</span>
-            <h3>Tata Surya</h3>
-          </div>
-          <div class="game-card" onclick="startGame('music')">
-            <span class="icon">🎻</span>
-            <h3>Alat Musik</h3>
-          </div>
-          <div class="game-card" onclick="startGame('flags')">
-            <span class="icon">🏁</span>
-            <h3>Bendera Dunia</h3>
-          </div>
-          <div class="game-card" onclick="startGame('weather')">
-            <span class="icon">🌦️</span>
-            <h3>Cuaca & Musim</h3>
-          </div>
-        </div>
+        </section>
       </section>
 
       <!-- Game Views (Dynamic Content) -->
@@ -199,6 +447,60 @@
     <script src="js/games/music.js"></script>
     <script src="js/games/flags.js"></script>
     <script src="js/games/weather.js"></script>
+    <script src="js/games/time_sequence.js"></script>
+    <script src="js/games/transport.js"></script>
+    <script src="js/games/family.js"></script>
+    <script src="js/games/food_sort.js"></script>
+    <script src="js/games/hygiene.js"></script>
+    <script src="js/games/school.js"></script>
+    <script src="js/games/shopping.js"></script>
+    <script src="js/games/word_scramble.js"></script>
+    <script src="js/games/maze.js"></script>
+    <script src="js/games/animal_matching.js"></script>
+    <script src="js/games/number_sort.js"></script>
+    <script src="js/games/missing_letter.js"></script>
+    <script src="js/games/direction.js"></script>
+    <script src="js/games/flying_animal.js"></script>
+    <script src="js/games/water_animal.js"></script>
+    <script src="js/games/catch_ball.js"></script>
+    <script src="js/games/fast_target.js"></script>
+    <script src="js/games/balloon_pop.js"></script>
+    <script src="js/games/catch_star.js"></script>
+    <script src="js/games/bug_smash.js"></script>
+    <script src="js/games/drag_fruit.js"></script>
+    <script src="js/games/shape_hole.js"></script>
+    <script src="js/games/block_stack.js"></script>
+    <script src="js/games/draw_line.js"></script>
+    <script src="js/games/bubble_pop.js"></script>
+    <script src="js/games/whack_mole.js"></script>
+    <script src="js/games/find_object.js"></script>
+    <script src="js/games/sliding_puzzle.js"></script>
+    <script src="js/games/coloring.js"></script>
+    <script src="js/games/digital_clock.js"></script>
+    <script src="js/games/ensiklo_indo.js"></script>
+    <script src="js/games/physics_stack.js"></script>
+    <script src="js/games/pizza_fraction.js"></script>
+    <script src="js/games/weather_clothes.js"></script>
+    <script src="js/games/bee_coding.js"></script>
+    <script src="js/games/fossil_gali.js"></script>
+    <script src="js/games/fruit_balance.js"></script>
+    <script src="js/games/tooth_brush.js"></script>
+    <script src="js/games/taxonomy_sort.js"></script>
+    <script src="js/games/symmetry_play.js"></script>
+    <script src="js/games/life_cycle.js"></script>
+    <script src="js/games/map_explorer.js"></script>
+    <script src="js/games/fossil_match.js"></script>
+    <script src="js/games/recipe_steps.js"></script>
+    <script src="js/games/sempoa_cilik.js"></script>
+    <script src="js/games/hidden_objects.js"></script>
+    <script src="js/games/packing_master.js"></script>
+    <script src="js/games/constellations.js"></script>
+    <script src="js/games/aim_practice.js"></script>
+    <script src="js/games/line_tracer.js"></script>
+    <script src="js/games/laundry_sort.js"></script>
+    <script src="js/games/healthy_plate.js"></script>
+    <script src="js/games/home_safety.js"></script>
+    <script src="js/games/recycle_factory.js"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
