@@ -3590,12 +3590,16 @@ function updateScore() {
 
 function showSuccess(callback) {
   const container = document.getElementById("game-container");
+  const successMsg = `HEBAT! Kamu pintar sekali, ${currentState.userName}!`;
+
   container.innerHTML = `
         <div class="fade-in" style="text-align:center">
             <h1 style="font-size: 5rem">🌟</h1>
             <h2>HEBAT!</h2>
-            <p>Kamu pintar sekali!</p>
+            <p style="font-size: 1.5rem; font-weight: 600; color: var(--primary);">${currentState.userName} pintar sekali!</p>
         </div>
     `;
-  setTimeout(callback, 1500);
+
+  speak(successMsg);
+  setTimeout(callback, 2000);
 }
