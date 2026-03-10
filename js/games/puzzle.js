@@ -1,18 +1,7 @@
 // 5. Puzzle Game (Simplified 3x3 Slide)
 function renderPuzzleGame() {
-  // Filter to available images in assets folder to avoid broken icons
-  const availablePuzzles = CONFIG.puzzles.filter((p) =>
-    [
-      "Singa",
-      "Gajah",
-      "Panda",
-      "Kucing",
-      "Apel",
-      "Bola",
-      "Monyet",
-      "Katak",
-    ].includes(p.name),
-  );
+  // Use all puzzles defined in CONFIG that have a file associated
+  const availablePuzzles = CONFIG.puzzles.filter((p) => p.file);
   const puzzle =
     availablePuzzles[Math.floor(Math.random() * availablePuzzles.length)];
   const imgSrc = `assets/${puzzle.file}`;
